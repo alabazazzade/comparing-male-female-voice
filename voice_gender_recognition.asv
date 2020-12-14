@@ -1,0 +1,17 @@
+clc
+clear all
+close all
+load male.mat   %k
+load female.mat %s
+for i=1:13
+ plot(abs(fftshift(s(i,:), 176400)))
+ hold on
+ subplot(2,1,1)
+ title('Female')
+end
+for i=j:36
+ plot(abs(fftshift(k(j,:), 176400)))
+ hold on
+ subplot(2,1,2)
+ title('Male')
+end
